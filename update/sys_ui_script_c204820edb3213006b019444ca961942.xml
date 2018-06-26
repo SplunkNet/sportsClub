@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>This is reusable UI Script used in UI page</description>
+        <global>false</global>
+        <name>x_37918_sports_clu.Angular App</name>
+        <script><![CDATA[angular.module('angularapp',[]);
+angular.module('angularapp').controller('AngularAppCtrl',function($scope){
+										
+	$scope.myVar='';
+	$scope.iVar=0;
+	$scope.clearText = function(){
+		$scope.myVar='';
+		$scope.iVar++;
+		alert("The myVar Value was cleared "+$scope.iVar + " times by "+g_user.userName);
+	};
+	
+  }
+);										
+								]]></script>
+        <script_name>Angular App</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-21 06:15:06</sys_created_on>
+        <sys_id>c204820edb3213006b019444ca961942</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_37918_sports_clu.Angular App</sys_name>
+        <sys_package display_value="Sports Club" source="x_37918_sports_clu">900a6c61db2213006b019444ca9619d1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sports Club">900a6c61db2213006b019444ca9619d1</sys_scope>
+        <sys_update_name>sys_ui_script_c204820edb3213006b019444ca961942</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-21 06:15:51</sys_updated_on>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>
